@@ -1,16 +1,67 @@
-# React + Vite
+# 🛠️ Trouve ton artisan  
+Plateforme web de mise en relation entre particuliers et artisans de la région Auvergne–Rhône-Alpes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet a été réalisé dans le cadre d’un développement complet comprenant :  
+- Maquettes Figma (mobile-first, tablette, desktop)  
+- Frontend React + Bootstrap + Sass  
+- API Node.js / Express / Sequelize  
+- Base de données MySQL  
+- Hébergement du site et de l’API  
+- Respect des normes WCAG 2.1 et bonnes pratiques de sécurité  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📑 Sommaire
+1. Présentation du projet  
+2. Technologies utilisées  
+3. Architecture du projet  
+4. Installation et lancement  
+   - Backend  
+   - Frontend  
+5. Variables d’environnement  
+6. Scripts disponibles  
+7. Sécurité mise en place  
+8. Structure des dossiers  
+9. Base de données  
+10. Liens utiles  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 1. 🎯 Présentation du projet
 
-## Expanding the ESLint configuration
+**Trouve ton artisan** est une plateforme permettant aux particuliers de :  
+1. Choisir une catégorie d’artisanat  
+2. Trouver un artisan  
+3. Le contacter via un formulaire  
+4. Recevoir une réponse sous 48h  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Le site est conçu **mobile-first**, accessible, sécurisé, et cohérent avec l’identité numérique de la région Auvergne–Rhône-Alpes.
+
+---
+
+## 2. 🧰 Technologies utilisées
+
+### **Frontend**
+- React  
+- React Router  
+- Bootstrap  
+- Sass  
+- Vite  
+
+### **Backend**
+- Node.js  
+- Express  
+- Sequelize  
+- MySQL / MariaDB  
+
+### **Autres**
+- Git & GitHub  
+- Figma  
+- Hébergement (Netlify / Vercel + Render / Railway)  
+
+---
+
+## 3. 🏗️ Architecture du projet
+
+
+
