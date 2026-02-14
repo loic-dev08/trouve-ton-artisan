@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: $font-main;
+}
+
+header, footer {
+  padding: 1rem;
+  background: $primary;
+  color: white;
+}
