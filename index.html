@@ -1,13 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <!--
+      Encodage + resposive (mobile fisrt) -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+
+    <!-- SEO global (par défaut.) -->
+     <title>Trouve ton artisan |Auvergne - Rhône-Alpes</title>
+     <meta name="description" content="Trouve facilement un artisan en Auvergne - Rhône-Alpes: choisissez une catégorie,
+      consultez les artisans et contactez-les via un formulaire." />
+
+      <!-- Couleur de thème (mobile) -->
+       <meta name="theme-color" content="#0074c7" />
+
+       <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Trouve ton artisan |Auvergne - Rhône-Alpes" />
+    <meta property="og:description" content="Choisissez une catégorie, trouvez un artisan, contactez-le facilement. Réponse sous 48h." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/logo.png" />
   </head>
+
   <body>
+    <!-- Skip link (WCAG) -->
+    <a class="skip-link" href="#main-content">Aller au contenu principal</a>
+
+    <!--Racine React-->
     <div id="root"></div>
+
+    <!-- Entrée Vite -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
