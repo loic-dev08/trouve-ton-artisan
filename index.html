@@ -1,35 +1,42 @@
+
 <!doctype html>
 <html lang="fr">
   <head>
-    <!--
-      Encodage + resposive (mobile fisrt) -->
+    <!-- Encodage + responsive (mobile first) -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO global (par défaut.) -->
-     <title>Trouve ton artisan |Auvergne - Rhône-Alpes</title>
-     <meta name="description" content="Trouve facilement un artisan en Auvergne - Rhône-Alpes: choisissez une catégorie,
-      consultez les artisans et contactez-les via un formulaire." />
+    <!-- SEO global -->
+    <title>Trouve ton artisan | Auvergne - Rhône-Alpes</title>
+    <meta
+      name="description"
+      content="Trouve facilement un artisan en Auvergne - Rhône-Alpes : choisissez une catégorie, consultez les artisans et contactez-les via un formulaire."
+    />
 
-      <!-- Couleur de thème (mobile) -->
-       <meta name="theme-color" content="#0074c7" />
+    <!-- Couleur de thème (mobile) -->
+    <meta name="theme-color" content="#0074c7" />
 
-       <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Trouve ton artisan |Auvergne - Rhône-Alpes" />
-    <meta property="og:description" content="Choisissez une catégorie, trouvez un artisan, contactez-le facilement. Réponse sous 48h." />
+    <!-- Favicons (placer les fichiers dans public/images/) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph (si l'image est dans public/images/) -->
+    <meta property="og:title" content="Trouve ton artisan | Auvergne - Rhône-Alpes" />
+    <meta
+      property="og:description"
+      content="Choisissez une catégorie, trouvez un artisan, contactez-le facilement. Réponse sous 48h."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.png" />
+    <meta property="og:image" content="/images/og-image.png" />
   </head>
 
   <body>
     <!-- Skip link (WCAG) -->
     <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
-    <!--Racine React-->
+    <!-- Racine React -->
     <div id="root"></div>
 
     <!-- Entrée Vite -->
