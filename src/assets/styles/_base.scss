@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: $font-main;
+    background-color: $color-bg;
+    color: $color-dark;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+
+    &:focus
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+img {
+    max-width: 100%;
+    
+}
+.visual-hidden {
+    position: absolute;
+    left: -10000px;
+}

@@ -1,0 +1,19 @@
+.header {
+    background-color:$color-secondary;
+    color:white
+}
+
+.footer {
+    background-color:$color-secondary;
+    color:white
+}
+
+.artisan-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition:transform 0.2s;
+}
+
+&:hover {
+    transform: translateY(-4px);
+}
