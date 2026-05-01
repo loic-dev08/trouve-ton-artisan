@@ -17,3 +17,18 @@
 &:hover {
     transform: translateY(-4px);
 }
+
+.searchbar__dropdown {
+    border-color:#ddd; 
+}
+
+.search__item.active button {
+    background-color:#f1f8fc; //charte
+    text-decoration: none;
+}
+
+.search__item.button:focus {
+   outline: 3px solid #82b864;
+   outline-offset: 2px;
+   text-decoration: none;
+}
