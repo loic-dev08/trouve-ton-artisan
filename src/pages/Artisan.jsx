@@ -377,3 +377,35 @@ export default function Artisan() {
       );
     }
 }
+
+/*-----------------------------------------
+        Validation helpers
+----------------------------------------- */
+
+function ValidateForm(form) {
+    const errs ={};
+
+    // Nom
+    if (!form.name?.trim()) errs.name ="Veuillez saisir votre nom.";
+    else if (form.name.trim().length<2) errs.name ="Le nom doit contenir au moins 2 caractères.";
+
+    // Email
+    if (!form.email?.trim()) errs.email ="Veuillez saisir votre email.";
+    else if (!isValidEmail(form.email.trim()))errs.email = "Veuillez saisir un email valide.";
+
+    // Objet
+    if (!form.subject?.trim()) errs.subject ="Veuillez saisir un objet.";
+    else if (form.subject.trim().length<2) errs.subject ="L'objet doit contenir au moins 2 caractères.";
+
+    // Message
+    if(!form.message?.trim()) errs.message ="Veuillez saisir un message.";
+    else if (form.message.trim().length<10) errs.message ="Le message doit contenir au moins 10 caractères.";
+    else if (form.message.trim().length >2000) errs.message ="Le message ne doit pas dépasser 2000 caractères.";
+
+    return errs;
+}
+
+function isValidEmail(email) {
+    // regex simple (UX). Le backend valide aussi.
+    return /^[^\s@] +@[^\s@]+\.[^\s@]+$/.test(email);
+}
