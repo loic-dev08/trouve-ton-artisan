@@ -10,33 +10,9 @@ a {
     text-decoration: none;
 
     &:focus {
-        top:0;
+        top: 0;
         outline: 3px solid $color-success;
         outline-offset: 2px;
-    }
-
-    .skip-link {
-        position: absolute;
-        left: 0px;
-        top: -40px;
-        background-color: $color-primary;
-        color: white;
-        padding: 10px 14px;
-        z-index: 9999;
-        border-radius: 0 0 6px 0;
-        transition: top 0.2s ease;
-       
-
-        &:focus {
-            position: static;
-            width: auto;
-            height: auto;
-            margin: 0.5em;
-            padding: 0.5em;
-            background-color: $color-primary;
-            color: #fff;
-            text-decoration: none;
-        }
     }
 
     &:hover {
@@ -44,11 +20,32 @@ a {
     }
 }
 
+/* Skip link (WCAG) */
+.skip-link {
+    position: absolute;
+    left: 0;
+    top: -48px;
+    background: #0074c7; // charte
+    color: #fff;
+    padding: 10px 14px;
+    z-index: 10000;
+    border-radius: 0 0 8px 0;
+    transition: top 0.2s ease;
+
+    &:focus {
+        top: 0; // apparaît
+        outline: 3px solid #82b864; // charte
+        outline-offset: 2px;
+    }
+}
+
 img {
     max-width: 100%;
-    
 }
+
+/* Accessibilité : élément caché mais lisible par les lecteurs d'écran */
 .visual-hidden {
     position: absolute;
     left: -10000px;
 }
+
